@@ -1,0 +1,99 @@
+@import "./variables";
+
+
+@mixin link($color , $hover , $size) {
+    a{
+        text-decoration: none;
+        color: $color ;
+        font-size: $size;
+        &:hover{
+            color: $hover;
+        }
+    }
+}
+
+
+@mixin section_title($content) {
+    position: relative;
+    text-align: center;
+    h5{
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        @include laptop{
+            font-size: 2rem;
+        }
+    }
+    &::before{
+        content: $content;
+        display: block;
+        height: 100%;
+        width: 100%;
+        opacity: .3;
+        font-weight: 1200;
+        position: absolute;
+        top: -2.5rem;
+        @include mobileMedium{
+            font-size: 4rem;
+        }
+
+        @include tablet{
+            font-size: 4.5rem;
+        }
+
+        @include laptop{
+            font-size: 5rem;
+        }
+    }
+}
+
+@mixin center_content(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center_items {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin direction($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin mobileMedium {
+    @media #{$media_medium}{
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media #{$media_small} {
+       @content ;
+    }
+}
+
+@mixin tablet() {
+    @media #{$media_tablet} {
+        @content ;
+    } 
+
+
+    @media #{$media_tablet_up} {
+        @content ;
+    }
+}
+
+@mixin laptop() {
+    @media #{$media_laptop}{
+        @content ;@content ;
+    }
+} 
+
+@mixin desktop() {
+    @media #{$media_desktop} {
+        @content ;
+    }
+}

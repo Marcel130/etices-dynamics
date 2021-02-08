@@ -1,0 +1,12 @@
+$mobile    : 600px;
+$tablet    : 768px;
+$laptop    : 992px;
+$desktop   : 1200px;
+
+
+$media_small      : "only screen and (max-width: #{$mobile})";
+$media_tablet     : "only screen and (min-width: #{$mobile})";
+$media_medium     : "only screen and (max-width: #{$tablet})";
+$media_tablet_up  : "only screen and (min-width: #{$tablet})";
+$media_laptop     : "only screen and (min-width: #{$laptop})";
+$media_desktop    : "only screen and (min-width: #{$desktop})";

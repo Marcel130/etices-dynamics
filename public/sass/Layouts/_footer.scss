@@ -1,0 +1,38 @@
+@import "./../Utils/mixins";
+@import "./../Utils/colors";
+
+.footer {
+    background-color: #000000de;
+    color: $white;
+    padding: 1rem 1rem 2.5rem 1rem ;
+    span{
+        font-size: 1.3rem;
+    }
+
+    .rights_author{
+
+        @include mobileMedium{
+            @include direction(column);
+            text-align: center;
+        }
+        
+        @include tablet {
+            text-align: center;
+        }
+        
+        span.rights{
+            @include laptop{
+                text-align: left;
+                float: left;
+            } 
+        }
+    
+        span.author{
+            @include laptop{
+                text-align: right;
+                float: right;
+            }
+        }
+    }
+
+}

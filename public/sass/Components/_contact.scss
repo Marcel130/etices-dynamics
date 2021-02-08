@@ -1,0 +1,55 @@
+@import "./../Utils/colors";
+@import "./../Utils/mixins";
+
+.Contact_us{
+    background: url('/images/etudiant-informatique-etices-dynamics.jpg');
+    padding: 5rem;
+
+    .section_title{
+        margin-top: 2rem;
+        @include section_title("C");
+        color: $white;
+    }
+
+    form{
+        margin-top: 4rem;
+            .form_input{
+                color: $white;
+                background-color: transparent;
+                margin-top: 1rem;
+            }
+        }
+        .form_area_container{
+
+            .form_area{
+                color: $white;
+                background-color: transparent;
+                margin-top: 1rem;
+            }
+        }
+
+        .submit_box{
+            margin-top: 1rem;
+            text-align: center;
+            @include center_content ;
+            .submit{
+                display: inline-block;
+                font-weight: 500;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border: 1px solid transparent;
+                padding: .5rem 2rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .1rem;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                background-color: $pineGreen;
+                color           : $white;
+            }
+        }
+}

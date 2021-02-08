@@ -1,0 +1,97 @@
+.Contact_us {
+  background: url("/images/etudiant-informatique-etices-dynamics.jpg");
+  padding: 5rem;
+}
+.Contact_us .section_title {
+  margin-top: 2rem;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+@media only screen and (min-width: 600px) {
+  .Contact_us .section_title h5 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Contact_us .section_title h5 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Contact_us .section_title h5 {
+    font-size: 2rem;
+    font-size: 2rem;
+  }
+}
+.Contact_us .section_title::before {
+  content: "C";
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  font-weight: 1200;
+  position: absolute;
+  top: -2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .Contact_us .section_title::before {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .Contact_us .section_title::before {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Contact_us .section_title::before {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Contact_us .section_title::before {
+    font-size: 5rem;
+    font-size: 5rem;
+  }
+}
+.Contact_us form {
+  margin-top: 4rem;
+}
+.Contact_us form .form_input {
+  color: #ffffff;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+.Contact_us .form_area_container .form_area {
+  color: #ffffff;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+.Contact_us .submit_box {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.Contact_us .submit_box .submit {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #007c76;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=Contact.module.css.map */

@@ -1,0 +1,43 @@
+.footer {
+  background-color: #000000de;
+  color: #ffffff;
+  padding: 1rem 1rem 2.5rem 1rem;
+}
+.footer span {
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer .rights_author {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .footer .rights_author {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer .rights_author {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer .rights_author span.rights {
+    text-align: left;
+    float: left;
+    text-align: left;
+    float: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer .rights_author span.author {
+    text-align: right;
+    float: right;
+    text-align: right;
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

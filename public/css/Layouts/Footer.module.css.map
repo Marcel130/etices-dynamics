@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../sass/Layouts/_footer.scss","../../sass/Utils/_colors.scss","../../sass/Utils/_mixins.scss"],"names":[],"mappings":"AAGA;EACI;EACA,OCHS;EDIT;;AACA;EACI;;AE0DJ;EFvDA;IEkDA;IACA,gBFhD2B;IACnB;;;AE+DR;EFnEA;IAQQ;;;AEgER;EFxEA;IAQQ;;;AEsER;EFnEI;IAEQ;IACA;IADA;IACA;;;AEgEZ;EF5DI;IAEQ;IACA;IADA;IACA","file":"Footer.module.css"}

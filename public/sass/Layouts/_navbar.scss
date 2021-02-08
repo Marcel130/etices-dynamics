@@ -1,0 +1,36 @@
+@import "./../Utils/colors";
+@import "./../Utils//mixins";
+
+.navbar {
+    border-bottom: .3px solid #d8d4d4;
+    @include laptop{
+        height: 4rem;
+    }
+    background-color: transparent !important;
+    color: $white;
+    .logo_site{
+        margin-left: 5rem;
+    }
+
+    .menu{
+        margin-left: 5rem;
+        @include link($white , $pineGreen , 1rem);
+        .menu_links{
+            color: $white;
+            @include link($white , $pineGreen , 1rem);
+        }
+    }
+    .social_links{
+        margin-right: 3rem;
+        .links {
+            list-style-type: none;
+            display: flex;
+            direction: row;
+
+            li{
+                margin-left: 1.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

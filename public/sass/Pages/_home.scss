@@ -1,0 +1,464 @@
+@import './../Utils/colors';
+@import "./../Utils//mixins";
+
+.section_message{
+    margin-top: 2rem ;
+    @include center_content ;
+    @include mobileMedium{
+        padding: 1rem 2rem;
+    }
+    h4{
+        font-weight: 400;
+        color: gray;
+        @include mobileMedium{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.header{
+    background: url('/images/bureau-de-travail-etices-dynamics.jpg');
+    padding-bottom: 2rem;
+    color: $white;
+
+    .title{
+        margin: 5rem 0 2rem 0;
+        @include tablet{
+            width: 100%;
+            margin: 5rem auto
+        }
+        .site_title{
+            @include direction(row);
+            @include center_content;
+            // letter-spacing: .3rem;
+         
+            h1{
+
+                @include tablet{
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+
+                @include laptop{
+                    font-size: 5rem;
+                    font-weight: 600;
+                }
+
+            }
+
+            h2{
+
+
+                @include mobileMedium{
+                    margin-top: .5rem;
+                    margin-left: .5rem;
+                    font-weight: 600;
+                }
+
+                @include tablet{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+
+                @include laptop{
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+        .site_slogan{
+            margin-top: -.8rem;
+            @include center_content;
+            h4{
+                letter-spacing: .2rem;
+                font-weight: 450;
+                @include mobileMedium{
+                    font-size: .9rem;
+                }
+
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+
+                @include laptop{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+    }
+
+    .dropdown{
+        @include direction(column);
+        @include center_items ;
+
+        .dropdown_icon_box{
+            .dropdown_icon{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.about_us{
+    background-color: $pineGreen;
+    color: $white;
+    padding: 3rem 2rem;
+    .section_title{
+        @include section_title("A");
+    }
+    .about_us_description{
+        margin-top: 1rem ;
+        @include center_content;
+        @include mobileMedium{
+            @include direction(column);
+        }
+        .about_us_description{
+            @include tablet{
+                @include center_items;    
+            }
+            .about_us_description_icon{
+                font-size: 3rem;
+                font-weight: 800;
+            }
+
+            .about_us_description_text{
+                display: inline-block;
+                word-wrap: break-word;
+                text-align: center;
+            }
+        }
+
+
+
+    }
+}
+
+.services {
+    background: url('/images/travail-sur-son-ordinateur.jpg');
+    padding: 2rem;
+    color: $white;
+    p.services_text{
+        text-align: justify;
+    }
+    .list_expertise{
+        .list{
+            list-style-type: none;
+            margin-left: -2.4rem;
+
+            li{
+                background-color: $green;
+                margin-top: .5rem;
+            }
+
+            li.list_item{
+                &:nth-child(1){
+                    @include laptop{
+                        padding-left: .5rem;
+                        width: 18rem;
+                    }
+
+                    @include tablet{
+                        width: 18.2rem;
+                        padding-left: .5rem;
+                    }
+
+                    @include mobileMedium{
+                        text-align: center;
+                    }
+                }
+
+                &:nth-child(2){
+                    @include laptop{
+                        width: 20rem;
+                        padding-left: 1rem;
+                    }
+
+                    @include tablet{
+                        width: 20rem;
+                        padding-left: .5rem;
+                    }
+
+                    @include mobileMedium{
+                        text-align: center;
+                    }
+                }
+
+                &:nth-child(3){
+                    @include laptop{
+                        width: 22rem;
+                        padding-left: 1rem;
+                    }
+
+                    @include tablet{
+                        width: 22rem;
+                        padding-left: .5rem;
+                    }
+
+                    @include mobileMedium{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @include mobileMedium{
+        @include direction(column);
+    }
+
+    @include tablet{
+        @include direction(column);
+    }
+
+    @include laptop{
+        @include direction(row);
+    }
+
+    .etiquette_box{
+        @include tablet{
+            margin-top: 3rem;
+        }
+
+        @include laptop{
+            margin-left: -7rem;
+        }
+        @include direction(row);
+        margin-bottom: 1.5rem;
+        .first_etiquette{
+            position: relative;
+            @include mobileMedium{
+                left: 2rem;
+                top: 2rem;
+                z-index: 1999;
+            }
+
+            @include tablet{
+                left: 4.5rem;
+                top: 2rem;
+                z-index: 1999;
+            }
+
+            @include laptop{
+                left: 10rem;
+                top: 3rem;
+                z-index: 1999;
+            }
+        }
+
+        .second_etiquette{
+            position: relative;          
+            @include mobileMedium{
+                bottom: 0;
+                left: -2rem;
+            }
+
+            @include laptop{
+                bottom: 4rem;
+            }
+
+        }
+    }
+}
+
+.expertise_box{
+    padding: 3rem 2rem;
+    background-color: $pineGreen;
+    .section_title{
+        @include section_title("E");
+        color: $white;
+    }
+
+    .expertise_list{
+        margin-top: 4rem;
+        @include center_content;
+       
+        @include mobileMedium{
+            @include direction(column); 
+        }
+
+        @include tablet{
+            @include direction(column);
+        }
+
+        @include laptop{
+            @include direction(row);
+             padding-left: 5rem;
+        }
+        .expertise_item{
+            @include center_items;
+            @include direction(column);
+            color: $white;
+            .icon_box{
+                background-color: $green;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                .icon{
+                    color: $white;
+                    font-size: 2rem;
+                    margin: 1.5rem 1rem 1rem 1.5rem;
+                }
+            }
+
+            span{
+                font-size: 1rem;
+            }
+
+            p{
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.expertise_infos{
+
+    .expertise_infos_item{
+        
+        @include mobileMedium{
+            @include direction(column);
+        }
+
+        @include laptop{
+            @include direction(row);
+        }
+
+        .text{
+            @include mobileMedium{
+                flex: 0 0 100%;
+                margin-top: -.5rem;
+            }
+
+            @include tablet{
+                flex : 0 0 100%;
+            }
+
+            @include laptop{
+                flex: 0 0 50%;
+            }
+            padding: 2rem;
+            &:nth-child(1){
+                background-color: gray;
+                @include mobileMedium{
+                    order : 2 ;
+                }
+            }
+
+            &:nth-child(2){
+                margin-top: -.4rem;
+                background-color: #ccc7c724;
+                @include tablet{
+                    max-height: 278px;
+                }
+
+                @include laptop{
+                    max-height: 304px;
+                }
+                @include mobileMedium{
+                    height: 100%;
+                }
+            }
+        }
+
+        .image_box{
+            @include mobileMedium{
+                flex: 0 0 100%;
+            }
+
+            @include tablet{
+                flex: 0 0 100%;
+            }
+
+            @include laptop{
+                flex: 0 0 50%;
+            }
+            &:nth-child(1){
+                @include laptop{
+                    margin-top: -.4rem;
+                }
+            }
+
+            &:nth-child(2){
+
+                @include mobileMedium{
+                    order : 1 ;
+                }
+            }
+
+        }
+    }
+}
+
+.our_realisations{
+    margin-top: 5rem;
+    background-color: $white;
+    .section_title{
+        @include section_title("R");
+        color: gray;
+    }
+
+    .our_realisations_container{
+
+        .realisation_image{
+            height: 17rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .realisation_title{
+            margin-top: 1rem;
+            height: 52px;
+            span{
+                color: $pineGreen;
+                font-size: 1.1rem;
+            }
+        }
+
+        .realisation_description{
+            margin-top: .5rem;
+            padding: 0 1rem;
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.our_team{
+    margin-top: 5rem;
+    background-color: $white;
+    .section_title{
+        @include section_title("T");
+        color: gray;
+    }
+
+    .our_team_member {
+        .name_box{
+            padding: 0 2rem;
+
+            .name{
+                @include direction(column);
+                span{
+                    color: $pineGreen;
+                    font-size: 1rem;
+                }
+                position: relative;
+                top: -3rem;
+                background-color: $white;
+            }
+        }
+    }
+    
+}
+
+.localisation{
+    background: url('/images/localisation-etices-dynamics.jpg');
+    padding: 15rem;
+    background-repeat: no-repeat;
+}

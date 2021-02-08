@@ -1,0 +1,50 @@
+.navbar {
+  border-bottom: 0.3px solid #d8d4d4;
+  background-color: transparent !important;
+  color: #ffffff;
+}
+@media only screen and (min-width: 992px) {
+  .navbar {
+    height: 4rem;
+    height: 4rem;
+  }
+}
+.navbar .logo_site {
+  margin-left: 5rem;
+}
+.navbar .menu {
+  margin-left: 5rem;
+}
+.navbar .menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.navbar .menu a:hover {
+  color: #007c76;
+}
+.navbar .menu .menu_links {
+  color: #ffffff;
+}
+.navbar .menu .menu_links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.navbar .menu .menu_links a:hover {
+  color: #007c76;
+}
+.navbar .social_links {
+  margin-right: 3rem;
+}
+.navbar .social_links .links {
+  list-style-type: none;
+  display: flex;
+  direction: row;
+}
+.navbar .social_links .links li {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */
